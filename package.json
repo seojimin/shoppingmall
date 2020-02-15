@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/seojimin/shoppingmall/issues"
   },
-  "homepage": "https://github.com/seojimin/shoppingmall#readme"
+  "homepage": "https://github.com/seojimin/shoppingmall#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
