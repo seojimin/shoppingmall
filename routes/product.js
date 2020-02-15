@@ -4,8 +4,17 @@ const router = express.Router();
 
 // 제품데이터 생성하기 create
 router.post('/', (req, res) => {
+
+   const product = {
+     name: req.body.name,
+     price:  req.body.price,
+      qty: req.body.qty
+   };
+
+
     res.json({
-       msg: "create product"
+       msg: "create product",
+       productInfo: product
     });
 });
 
