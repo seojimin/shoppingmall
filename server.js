@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const morgan = require('morgan');
 
 const productRoutes = require('./routes/product');
 const orderRoutes = require('./routes/order');
@@ -10,6 +11,9 @@ const bbsRoutes = require('./routes/bbs');
 //        msg: '서버 시작됨!'
 //    });
 // });
+
+app.use(morgan('dev'));
+
 
 app.use('/product', productRoutes);
 app.use('/order', orderRoutes);
